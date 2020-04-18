@@ -1,0 +1,38 @@
+{
+  "name": "next-boileplater",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:rodrigoreeis/next-boileplater.git",
+  "author": "Rodrigo Reis <br.rodrigoreis@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@zeit/next-sass": "^1.0.1",
+    "babel-eslint": "^10.1.0",
+    "classnames": "^2.2.6",
+    "eslint": "^6.8.0",
+    "eslint-plugin-react": "^7.19.0",
+    "husky": "^4.2.5",
+    "next": "^9.3.5",
+    "node-sass": "^4.13.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "sass-resources-loader": "^2.0.3",
+    "stylelint": "^13.3.2",
+    "stylelint-config-recommended-scss": "^4.2.0",
+    "stylelint-scss": "^3.17.0"
+  },
+  "scripts": {
+    "start": "next",
+    "build": "next build",
+    "serve": "next start",
+    "format": "eslint --fix . --ext .js, src"
+  },
+  "devDependencies": {
+    "babel-plugin-module-resolver": "^4.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn format"
+    }
+  }
+}
