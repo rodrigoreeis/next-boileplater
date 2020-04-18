@@ -1,0 +1,8 @@
+{
+  "name": "next-boileplater",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:rodrigoreeis/next-boileplater.git",
+  "author": "Rodrigo Reis <br.rodrigoreis@gmail.com>",
+  "license": "MIT"
+}
