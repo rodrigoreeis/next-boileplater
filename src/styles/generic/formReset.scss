@@ -25,18 +25,25 @@ textarea {
   line-height: 1;
 
   font-size: 13px;
-  font-family: Arial;
 }
 
-input:focus {
-  outline: 0;
+input {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  &:focus{
+    outline: 0;
+  }
 }
 
-input,
 textarea {
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
+  &:focus{
+    vertical-align: top;
+    overflow: auto;
+  }
 }
 
 button,
@@ -79,11 +86,6 @@ input[type='submit'] {
   padding: 0;
   border: 0;
   background: none;
-}
-
-textarea {
-  vertical-align: top;
-  overflow: auto;
 }
 
 select[multiple] {
