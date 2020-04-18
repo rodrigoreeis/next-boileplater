@@ -10,13 +10,19 @@
     "plugin:react/recommended"
   ],
   "rules": {
+    "semi": ["error", "never"],
+    // "space-in-brackets": ["error", "always"],
+    "keyword-spacing": "error",
+    "object-curly-spacing": ["error", "always", { "arraysInObjects": false }],
+    "jsx-quotes": ["error", "prefer-single"],
+    "quotes": [2, "single", { "avoidEscape": true }],
     "no-unused-vars": 2,
     "no-console": "off",
     "no-undef": 2,
     "react/prop-types": 0,
     "react/react-in-jsx-scope": "off",
     "react/jsx-props-no-spreading": "off",
-    "react/jsx-max-props-per-line": [1, { "maximum": 3 }]
+    "react/jsx-max-props-per-line": [1, { "maximum": 2 }]
   },
   "parserOptions": {
     "sourceType": "module"
