@@ -1,7 +1,9 @@
+$btn-color-green: #02841298;
+
 .button {
   width: 130px;
   padding: 20px;
   border-radius: 4px;
-  color: var(--color-white);
-  background-color: #02841298;
+  color: $color-white;
+  background-color: $btn-color-green
 }
