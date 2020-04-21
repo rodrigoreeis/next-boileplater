@@ -28,7 +28,9 @@
     "start": "next",
     "build": "next build",
     "serve": "next start",
+    "export": "yarn build && next export",
     "format": "eslint --fix . --ext .js, src"
+
   },
   "devDependencies": {
     "babel-plugin-module-resolver": "^4.0.0"
