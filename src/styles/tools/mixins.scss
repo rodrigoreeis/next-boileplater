@@ -7,7 +7,7 @@
 }
 
 $z-index: (
-  default : 1,
+  loader : 5,
 );
 
 @mixin arrow-generator($direction, $color, $size) {
