@@ -1,6 +1,6 @@
 # Popeye Boileplater
 
-<img src='./popeye.png' />
+<img src='./popeye.jpg' />
 
 ### Installing
 
