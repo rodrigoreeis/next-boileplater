@@ -1,6 +1,6 @@
 import classnames from 'classnames'
 
-import './Container.scss'
+import './Container.module.scss'
 
 const Container = ({ className, ...props }) => {
   const classNames = classnames('container', {

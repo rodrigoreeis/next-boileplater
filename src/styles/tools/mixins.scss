@@ -7,20 +7,20 @@
 }
 
 $z-index: (
-  loader : 5,
+  loader: 5,
 );
 
 @mixin arrow-generator($direction, $color, $size) {
   display: inline-block;
   width: 0;
   height: 0;
-  
+
   $directions: top, right, bottom, left;
   @for $i from 1 through length($directions) {
-      @if nth($directions, $i) == $direction {
-          border-#{get-item($directions, $i, -1)}: $size solid transparent; 
-          border-#{get-item($directions, $i, 1)}: $size solid transparent; 
-          border-#{get-item($directions, $i, 2)}: $size solid $color; 
-      } 
+    @if nth($directions, $i) == $direction {
+      border-#{get-item($directions, $i, -1)}: $size solid transparent;
+      border-#{get-item($directions, $i, 1)}: $size solid transparent;
+      border-#{get-item($directions, $i, 2)}: $size solid $color;
+    }
   }
 }

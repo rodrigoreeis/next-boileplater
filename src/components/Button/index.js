@@ -1,8 +1,14 @@
-import React from 'react'
+import ClassNames from 'classnames'
 
-import './Button.scss'
+import './Button.module.scss'
 
-const Button = ({ children }) => 
-  <button className='button'>{children}</button>
+const Button = ({ children, className, ...props }) => {
+
+  return (
+    <button {...props} className={ClassNames('button', className)}>
+      {children}
+    </button>
+  )
+}
 
 export default Button

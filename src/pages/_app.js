@@ -1,7 +1,10 @@
 import 'styles/app.scss'
+import { ContextProvider } from 'context'
 
 const App = ({ Component, pageProps }) => (
-   <Component {...pageProps} />
+  <ContextProvider>
+    <Component {...pageProps} />
+  </ContextProvider>
 )
 
 App.getInitialProps = async ({ Component, ctx }) => {
