@@ -1,8 +1,9 @@
 import ClassNames from 'classnames'
+import Src from 'next/image'
 
 const Image = ({ className, src, alt }) => (
   <figure className={ClassNames('figure', className)}>
-    <img src={src} alt={alt || ''} />
+    <Src src={src} alt={alt || ''} />
   </figure>
 )
 
