@@ -5,7 +5,7 @@ const savedContext = storage.getItem('context')
 
 const AppContext = createContext()
 
-const initialState = { ...savedContext }
+const initialState = { ...savedContext, oi: 'oi' }
 
 if (!savedContext) {
   storage.setItem('context', initialState)
@@ -14,7 +14,7 @@ if (!savedContext) {
 const ContextProvider = ({ children }) => {
   const [context, setContext] = useState(initialState)
 
-  const updateContext = (state) => {
+  const updateContext = state => {
     setContext({ ...context, ...state })
   }
 

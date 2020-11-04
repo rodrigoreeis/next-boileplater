@@ -1,10 +1,12 @@
 import 'styles/app.scss'
+import Compose from 'components/Compose'
+
 import { ContextProvider } from 'context'
 
 const App = ({ Component, pageProps }) => (
-  <ContextProvider>
+  <Compose providers={[ContextProvider]}>
     <Component {...pageProps} />
-  </ContextProvider>
+  </Compose>
 )
 
 App.getInitialProps = async ({ Component, ctx }) => {
